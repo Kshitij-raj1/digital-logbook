@@ -1,0 +1,9 @@
+/* top bar + library page */
+.topbar { display:flex; align-items:center; gap:12px; padding:10px 20px; background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; }
+.brand { cursor:pointer; font-size:16px; }
+.library { display:grid; grid-template-columns:1.3fr 1fr; gap:16px; padding:20px; max-width:1200px; margin:0 auto; align-items:start; }
+@media (max-width:900px){ .library{grid-template-columns:1fr} }
+.list { list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+.list li { display:flex; gap:8px; align-items:center; padding:10px; border:1px solid var(--line); border-radius:10px; flex-wrap:wrap; }
+.pill { font-size:11px; padding:1px 8px; border-radius:99px; background:#eef0f6; color:#444; }
+.upload { display:grid; gap:8px; margin-top:16px; padding-top:12px; border-top:1px dashed var(--line); }
